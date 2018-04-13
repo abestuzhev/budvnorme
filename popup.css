@@ -1,8 +1,9 @@
 .completion-order {
-    padding: 30px 65px 30px;
+    padding: 100px 65px;
     border: 3px solid #00b4f7;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    max-width: 530px;
+    /*max-width: 1170px;*/
+    width:900px;
     background: #f9f9f9;
     color: #444;
     text-shadow: none;
@@ -26,10 +27,10 @@
 .completion-order__icon {
     border-bottom: 1px solid #a0cbe1;
     margin-bottom: 14px;
-    background: url(./images/logo-speaker.png) 37% 0 no-repeat;
-    height: 130px;
-    -webkit-background-size:45%;
-    background-size:45%;
+    background: url(./images/logo-speaker.png) 45% 0 no-repeat;
+    height: 200px;
+    -webkit-background-size:28%;
+    background-size:28%;
 }
 
 .completion-order__title {
@@ -37,34 +38,36 @@
     text-transform: uppercase;
     color: #123b86;
     font-family: "OpenSansBold";
-    margin: 0 0 0;
-    font-size: 24px;
+    line-height: 1;
+    margin: 50px 0 20px 0;
+    font-size: 45px;
 }
 
 .completion-order__subtitle {
     text-align: center;
-    margin: 0 0 15px;
-    font-size: 15px;
+    margin: 0 0 55px;
+    font-size: 30px;
 }
 
 .completion-order-social {
     border: 2px solid #a0cbe1;
     border-radius: 8px;
-    padding: 8px 15px;
+    padding: 12px 22px;
     display: inline-block;
 }
 
 
 .completion-order-social__head {
     float: left;
-    padding: 6px 0;
-    font-size: 16px;
-    margin-right: 10px;
+    padding: 12px 0;
+    font-size: 28px;
+    margin-right: 41px;
 }
 
 .completion-order-social__list {
     float: right;
     font-size: 0;
+    margin-top: 6px;
 }
 
 .completion-order-social::after {
