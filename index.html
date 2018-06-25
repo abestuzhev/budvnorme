@@ -147,6 +147,8 @@
                         </li>
                     </ul>
                 </nav>
+    
+                <a href="#" id="show-thanks">кнопка показа модалки</a>
             </div>
         
         </div>
@@ -453,7 +455,7 @@
 
 
 <!--модальное окно завершения заказа-->
-<div class="completion-order preview">
+<div class="completion-order">
     <div class="completion-order__icon"></div>
     <h2 class="completion-order__title">Спасибо за ваш заказ!</h2>
     <h3 class="completion-order__subtitle">Менеджер свяжется с вами в ближайшее время.</h3>
@@ -466,8 +468,26 @@
     </div>
 </div>
 
-<div class="fancybox-overlay fancybox-overlay-fixed" style="width: auto; height: auto; background: rgba(255, 255, 255, 0.8); display: block;"></div>
+<div class="fancybox-overlay " style="width: auto; height: auto; background: rgba(255, 255, 255, 0.8); display: block;"></div>
 <!--END модальное окно завершения заказа-->
 
+<script>
+    $(function(){
+       $(document).on('click', '#show-thanks', function(e){
+           e.preventDefault();
+           $('.completion-order').addClass('is-show');
+           $('.fancybox-overlay').addClass('fancybox-overlay-fixed');
+
+           setTimeout(function(){
+               if($('.completion-order').hasClass('is-show')){
+                   $('.completion-order').removeClass('is-show');
+                   $('.fancybox-overlay').removeClass('fancybox-overlay-fixed');
+               }
+           }, 5000)
+       })
+        
+       
+    });
+</script>
 </body>
 </html>

@@ -10,18 +10,29 @@
     border-radius: 8px;
     box-sizing: border-box;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition:all .2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .completion-order * {
     box-sizing: border-box;
 }
 
-.completion-order.preview {
+.completion-order.is-show {
+    opacity: 1;
+    visibility: visible;
+    transition:all .2s ease-in-out;
     position: fixed;
     z-index: 99999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
 }
 
 .completion-order__icon {
@@ -96,3 +107,5 @@
 .completion-order-social__item.sn_fb {
     background: url(./images/ico_sn_fb.png) no-repeat 0 0;
 }
+
+/*fancybox-overlay-fixed*/
